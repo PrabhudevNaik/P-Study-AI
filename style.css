@@ -1,0 +1,622 @@
+/* ===========================
+   P Study AI - style.css
+   Part 1
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",Arial,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#f8fafc;
+    min-height:100vh;
+    padding:30px;
+}
+
+/* Container */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+/* Header */
+
+header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+header h1{
+    font-size:42px;
+    color:#22c55e;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#94a3b8;
+    font-size:17px;
+}
+
+/* Card */
+
+.card{
+
+    background:#1e293b;
+
+    border:1px solid #334155;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+/* Card Titles */
+
+.card h2{
+
+    margin-bottom:18px;
+
+    color:#22c55e;
+
+}
+
+/* Input */
+
+input[type=file]{
+
+    width:100%;
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:1px solid #334155;
+
+    margin-bottom:15px;
+
+}
+
+/* Textarea */
+
+textarea{
+
+    width:100%;
+
+    height:180px;
+
+    resize:vertical;
+
+    border:none;
+
+    outline:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    background:#0f172a;
+
+    color:white;
+
+    border:1px solid #334155;
+
+    font-size:15px;
+
+    margin-bottom:15px;
+
+}
+
+/* Buttons */
+
+button{
+
+    background:#22c55e;
+
+    color:black;
+
+    border:none;
+
+    padding:13px 22px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#16a34a;
+
+    transform:translateY(-2px);
+
+}
+
+/* Button Grid */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:15px;
+
+}
+
+/* Output */
+
+#output{
+
+    background:#0f172a;
+
+    border:1px solid #334155;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    min-height:220px;
+
+    white-space:pre-wrap;
+
+    line-height:1.7;
+
+    overflow:auto;
+
+}
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+
+    margin-top:35px;
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}
+
+/* Utility */
+
+.hidden{
+
+    display:none;
+
+}
+/* ===========================
+   P Study AI - style.css
+   Part 2
+=========================== */
+
+/* Loading Section */
+
+#loading{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.spinner{
+    width:45px;
+    height:45px;
+    border:5px solid #334155;
+    border-top:5px solid #22c55e;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin-bottom:10px;
+}
+
+@keyframes spin{
+
+    0%{
+        transform:rotate(0deg);
+    }
+
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
+
+/* Output Animation */
+
+#output{
+    animation:fadeIn .5s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Nice Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#22c55e;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#16a34a;
+}
+
+/* Placeholder */
+
+textarea::placeholder,
+input::placeholder{
+    color:#94a3b8;
+}
+
+/* Focus */
+
+textarea:focus,
+input:focus{
+
+    border:1px solid #22c55e;
+
+    box-shadow:0 0 10px rgba(34,197,94,.35);
+
+}
+
+/* Button Active */
+
+button:active{
+
+    transform:scale(.97);
+
+}
+
+/* Card Hover */
+
+.card{
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+/* Header Animation */
+
+header h1{
+
+    animation:slideDown .7s ease;
+
+}
+
+@keyframes slideDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Output Typography */
+
+#output h3{
+
+    color:#22c55e;
+
+    margin-bottom:12px;
+
+}
+
+#output p{
+
+    margin-bottom:12px;
+
+}
+
+#output ul{
+
+    margin-left:20px;
+
+    margin-top:10px;
+
+}
+
+#output li{
+
+    margin-bottom:8px;
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.container{
+
+padding:10px;
+
+}
+
+header h1{
+
+font-size:34px;
+
+}
+
+.card{
+
+padding:18px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media(max-width:650px){
+
+body{
+
+padding:12px;
+
+}
+
+header h1{
+
+font-size:28px;
+
+}
+
+header p{
+
+font-size:15px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+textarea{
+
+height:150px;
+
+}
+
+#output{
+
+min-height:180px;
+
+}
+
+}
+
+/* Success */
+
+.success{
+
+color:#22c55e;
+
+font-weight:bold;
+
+}
+
+/* Error */
+
+.error{
+
+color:#ef4444;
+
+font-weight:bold;
+
+}
+
+/* Info */
+
+.info{
+
+color:#3b82f6;
+
+font-weight:bold;
+
+}
+
+/* Warning */
+
+.warning{
+
+color:#f59e0b;
+
+font-weight:bold;
+
+}
+/* =========================================
+   Chat History Sidebar
+========================================= */
+
+
+.app{
+    display:flex;
+    gap:25px;
+    max-width:1800px;
+    margin:0 auto;
+    align-items:flex-start;
+}
+
+.sidebar{
+    width:300px;
+    min-width:300px;
+    height:calc(100vh - 40px);
+    position:sticky;
+    top:20px;
+    background:#111827;
+    border:1px solid #334155;
+    border-radius:15px;
+    padding:20px;
+    overflow-y:auto;
+}
+
+.container{
+    flex:1;
+    min-width:0;
+}
+#historySearch{
+
+    width:100%;
+    box-sizing:border-box;
+
+    padding:12px;
+
+    margin:15px 0;
+
+    border-radius:10px;
+
+    border:none;
+
+    outline:none;
+
+    background:#1e293b;
+
+    color:white;
+}
+#newChatBtn{
+
+    width:100%;
+
+    margin-bottom:20px;
+
+}
+
+#historyList{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.history-item{
+
+    background:#1e293b;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    border:1px solid #334155;
+
+}
+
+.history-item:hover{
+
+    background:#334155;
+
+}
+
+.history-title{
+
+    font-weight:bold;
+
+    color:#22c55e;
+
+    margin-bottom:5px;
+
+}
+
+.history-time{
+
+    font-size:12px;
+
+    color:#94a3b8;
+
+}
+.actions{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.history-file{
+    color:#ffffff;
+    font-weight:bold;
+    margin-bottom:6px;
+    font-size:15px;
+
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}

@@ -1,0 +1,30 @@
+# ==========================
+# Python
+__pycache__/
+*.py[cod]
+
+# ==========================
+# Environment Variables
+.env
+
+# ==========================
+# Uploaded Files
+uploads/
+
+# ==========================
+# Chat History
+history/history.json
+
+# ==========================
+# VS Code
+.vscode/
+
+# ==========================
+# Virtual Environment
+venv/
+.venv/
+
+# ==========================
+# Operating System Files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>P Study AI</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <h2>📚 History</h2>
+
+        <input
+            type="text"
+            id="historySearch"
+            placeholder="Search history..."
+        >
+
+        <button id="newChatBtn">
+            ➕ New Chat
+        </button>
+
+        <button id="clearHistoryBtn">
+            🗑 Clear History
+        </button>
+        
+        <div id="historyList">
+
+            <p>No history yet.</p>
+
+        </div>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="container">
+
+<header>
+
+    <h1>📚 P Study AI</h1>
+
+    <p>
+        AI Powered Study Assistant
+    </p>
+
+</header>
+
+    <!-- Upload PDF -->
+
+    <div class="card">
+
+        <h2>Upload PDF Notes</h2>
+
+        <input
+            type="file"
+            id="pdfFile"
+            accept=".pdf"
+        >
+
+        <button id="uploadBtn">
+            📄 Upload PDF
+        </button>
+
+    </div>
+
+
+    <!-- Notes -->
+
+    <div class="card">
+
+        <h2>Your Notes</h2>
+
+        <textarea
+            id="notes"
+            placeholder="Upload your PDF or paste notes here..."
+        ></textarea>
+
+    </div>
+
+
+    <!-- Ask AI -->
+
+    <div class="card">
+
+        <h2>Ask AI</h2>
+
+        <textarea
+            id="question"
+            placeholder="Ask anything..."
+        ></textarea>
+
+        <button id="chatBtn">
+            🤖 Ask AI
+        </button>
+
+    </div>
+
+
+    <!-- Study Tools -->
+
+    <div class="card">
+
+        <h2>Study Tools</h2>
+
+        <div class="actions">
+
+            <button id="summaryBtn">
+                📝 Generate Summary
+            </button>
+
+            <button id="mcqBtn">
+                ❓ Generate MCQs
+            </button>
+
+            <button id="explainBtn">
+                📖 Explain Topic
+            </button>
+
+            <button id="vivaBtn">
+                🎤 Viva Questions
+            </button>
+
+            <button id="flashcardBtn">
+                🧠 Flashcards
+            </button>
+
+            <button id="plannerBtn">
+                📅 Study Planner
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Output -->
+
+    <div class="card">
+
+    <h2>AI Response</h2>
+
+    <div id="loading" class="loading" style="display:none;">
+        ⏳ Thinking...
+    </div>
+
+    <div
+        id="output"
+        class="output"
+    >
+Welcome to P Study AI.
+
+Upload your PDF and start learning.
+        </div>
+
+    </div>
+
+    </div>
+
+</div>
+
+<script src="/script.js"></script>
+
+</body>
+
+</html>
