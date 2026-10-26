@@ -9,6 +9,9 @@ This project was developed as a first-semester Python project to apply the conce
 The application allows students to upload PDF notes and use AI to study more efficiently by generating summaries, MCQs, explanations, viva questions, flashcards, and study plans.
 
 ---
+![Home](screenshots/01-home.png)
+![AI response](screenshots/07-ai-response.png)
+![Flashcards](screenshots/14-flashcards.png)
 
 # ✨ Features
 
@@ -69,7 +72,7 @@ P_STUDY_AI
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/P-Study-AI.git
+git clone https://github.com/PrabhudevNaik/P-Study-AI.git
 ```
 
 ### Go to the project folder
